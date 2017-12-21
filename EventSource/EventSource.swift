@@ -257,7 +257,7 @@ open class EventSource: NSObject, URLSessionDataDelegate {
                 if let reconnectTime = parseRetryTime(event) {
                     self.retryTime = reconnectTime
                 }
-                continue
+               // continue
             }
 
             parsedEvents.append(parseEvent(event))
